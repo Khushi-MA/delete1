@@ -1,0 +1,139 @@
+.footer {
+  margin-top: auto;
+  background-color: #f8f9fa;
+  border-top: 1px solid var(--border, #ddd);
+  padding: 2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icons a:hover {
+  color: #0066cc;
+  transform: scale(1.1);
+}
+
+.footerNavSections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.footerNavGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.footerNavTitle {
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footerNavTitle:hover {
+  color: #0066cc;
+}
+
+.footerSublink {
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.footerSublink:hover {
+  color: #0066cc;
+}
+
+.developerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.developerIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  margin: 0 0.5rem;
+}
+
+.developerIcon:hover {
+  color: #0066cc;
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footerNavSections {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .icons {
+    gap: 1rem;
+  }
+
+  .developerSection {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .icons {
+    gap: 0.75rem;
+  }
+
+  .icons svg {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,87 @@
+/* contact.module.css */
+
+.contact main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: #f9f6f1;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.contact .contactImage {
+  flex: 1;
+}
+
+.contact .contactImage img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  display: block;
+}
+
+.contact .contactDetails {
+  flex: 2;
+}
+
+.contact .contactHeading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+  border-bottom: 2px solid #c8a96e;
+  padding-bottom: 0.5rem;
+}
+
+.contact .contactItem {
+  margin-bottom: 1.5rem;
+}
+
+.contact .contactLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #2c2c2c;
+}
+
+.contact .contactIcon {
+  color: #c8a96e;
+  display: flex;
+  align-items: center;
+}
+
+.contact .contactName {
+  font-size: 1rem;
+}
+
+.contact .contactLink {
+  color: #444;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.contact .contactLink:hover {
+  color: #c8a96e;
+}
+
+@media (max-width: 768px) {
+  .contact section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact .contactLabel {
+    justify-content: center;
+  }
+
+  .contact .contactImage img {
+    margin: 0 auto;
+  }
+}

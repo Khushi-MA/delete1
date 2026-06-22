@@ -1,0 +1,80 @@
+/* education.module.css */
+
+.education main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.education .pageTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+  border-bottom: 2px solid #c8a96e;
+  padding-bottom: 0.5rem;
+}
+
+.education .educationSection {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  background-color: #f9f6f1;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.education .imageLeft {
+  flex-direction: row;
+}
+
+.education .imageRight {
+  flex-direction: row-reverse;
+}
+
+.education .imageContainer {
+  flex: 1;
+}
+
+.education .imageContainer img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  display: block;
+}
+
+.education .contentContainer {
+  flex: 2;
+}
+
+.education .contentContainer h2 {
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+  font-size: 1.5rem;
+}
+
+.education .scrollableContent {
+  color: #444;
+  line-height: 1.8;
+}
+
+.education .scrollableContent p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+  .education .educationSection,
+  .education .imageRight,
+  .education .imageLeft {
+    flex-direction: column;
+  }
+
+  .education .imageContainer img {
+    max-width: 100%;
+  }
+
+  .education .pageTitle {
+    font-size: 1.75rem;
+  }
+}

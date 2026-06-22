@@ -1,0 +1,83 @@
+// family.jsx
+
+import React, { useEffect } from "react";
+import styles from "../styles-pages/family.module.css";
+import familyImage from "../assets/image.jpeg";
+
+const NAVBAR_HEIGHT_REM = 3.5;
+
+function scrollToHashWithOffset() {
+    if (window.location.hash) {
+        const hash = window.location.hash;
+        const id = hash.replace("#", "");
+        const el = document.getElementById(id) || document.querySelector(hash);
+
+        if (el) {
+            const yOffset =
+                NAVBAR_HEIGHT_REM *
+                parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+            const y =
+                el.getBoundingClientRect().top +
+                window.pageYOffset -
+                yOffset;
+
+            window.scrollTo({ top: y, behavior: "auto" });
+        }
+    }
+}
+
+const sections = [
+    {
+        id: 1,
+        image: familyImage,
+        heading: "ಮದುವೆ ಮಕ್ಕಳು",
+        paratext: `ನಮ್ಮ ಅಣ್ಣನ ಮದುವೆ ಅವರ ಹದಿನೇಳನೆಯ ವಯಸ್ಸಿಗೆಯೇ ಆಯಿತು.ಆವಾಗಲೇ ನನ್ನ ಮದುವೆಯನ್ನು ಮಾಡುವ ವಿಚಾರವನ್ನು ಅಪ್ಪ ಮುಂದಿಟ್ಟಿದ್ದರು. ಆಗ ನಾನಿನ್ನೂ ಹೈಸ್ಕೂಲು ವಿದ್ಯಾರ್ಥಿ. ನಾನು ಎಂ.ಎ. ದ ವರೆಗೆ ಓದಿ ನೌಕರಿ ಹಿಡಿದಾಗ ನನಗೆ 28 ವರ್ಷ ವಯಸ್ಸಾಗಿತ್ತು.ಅದಕ್ಕೆ ನಾನು ಯಾವ ಸೆಲೆಕ್ಷನ್ನಿಗೂ ಹೋಗಲಿಲ್ಲ. ನಾನು ಕಾಲೇಜಿನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಾ ಬ್ಯುಜಿಯಾಗಿರುವಾಗಲೇ ನಮ್ಮ ದೊಡ್ಡಪ್ಪನವರು ನನಗೆ ಕನೈಯನ್ನು ನೋಡಿ,ಗೊತ್ತು ಮಾಡಿ ಮದುವೆಯ ದಿನಾಂಕವನ್ನೂ ನಿಷ್ಕರ್ಷೆ ಮಾಡಿ ಬಿಟ್ಟಿದ್ದರು. ಮದುವೆಯಾಗುವ ಹುಡುಗಿ ನನ್ನ ಗೆಳೆಯ ಮತ್ತು ಒಂದು ಕಾಲದ ರೂಮ ಮೇಟ ಆಗಿದ್ದ ಯಲಮಗೇರಿ ಬಸನಗೌಡನ ಸಹೋದರಿ.ನಾನು ಅವರ ಮನೆಗೆ ಹತ್ತಾರು ಸಲ ಹೋದದ್ದುಂಟು,ನೋಡಿದ್ದೂ ಉಂಟು, ಅದಕ್ಕೆ ನೋಡುವ ಪರಾಮಶಿಸುವ ವಿಷಯಗಳೆಲ್ಲಾ ಔಪಚಾರಿಕವಾಗಿದ್ದವು.ನಗರ ಪ್ರದೇಶದ ಹೈ ಫೈ ಹುಡುಗೆಯನ್ನು ನೋಡಲಿಕ್ಕೆ ಹೋಗಲಿಲ್ಲ. ಏಕೆಂದರೆ ನಾನು ಮದುವೆಯಾಗುವವಳು ನಮ್ಮೂರಿಗೆ ಬಂದು ಒಂದೆರಡು ದಿವಸ ಇರುವ ಪ್ರಸಂಗ ಬಂದರೆ ಏನೊಂದೂ ಅನುಕೂಲತೆಗಳಿಲ್ಲದ, ಅತೀ ಅವಶ್ಯವಾದ ಒಂದು ಸೌಚಾಲಯವೂ ಇಲ್ಲದ ಮನೆಗೆ ಒಗ್ಗಿಕೊಳ್ಳುವಂಥ ಕನೈಯೇ ಇವಳಾಗಿದ್ದಳು. ಗಂಡಿಗೊಂದು ಹೆಣ್ಣು ಜೋಡಿಯಾಗಿ ಯಲಮಗೇರಿ ತೋಟನಗೌಡರ ಮಗಳು ರುದ್ರವ್ವ ನನ್ನ ಕೈ ಹಿಡಿದು ಬಂದು ಸಹಧರ್ಮಿಣಿಯಾದಳು. ಅತ್ತ ಹಳ್ಳಿಯೂ ಅಲ್ಲದ, ಇತ್ತ ವೈಭವದ ನಗರವೂ ಅಲ್ಲದ ಹಾವೇರಿಯಲ್ಲಿ ಮುವ್ವತ್ತು ರೂಪಾಯಿ ಬಾಡಿಗೆಯ ಒಂದು ಸಣ್ಣ ಮನೆಯಲ್ಲಿ ಸಂಸಾರ ಹೂಡಿದ ವರ್ಷವೇ (1969) ನನ್ನ ಮೊದಲನೆಯ ಮಗ ರವಿಶಂಕರ ಹುಟ್ಟಿ ಬಂದು ನಗೆಯ ಅಲೆಯನ್ನೆಬ್ಬಿಸಿದ. ಮುಂದೆ 1973 ರಲ್ಲಿ ನಮ್ಮ ಮಗಳು ಜೋತ್ಸಾ ಹುಟ್ಟಿ ಬಂದಳು. ಕಾಲೇಜಿನ ಜವಾಬ್ದಾರಿಗಳು ಹೆಚ್ಚಾಗಿ ವಿದ್ಯಾರ್ಥಿ ಬಳಗಕ್ಕೆ ತೀರ ಹತ್ತಿರದವನಾಗಿದ್ದೆ. ನನ್ನ ಗಳಿಬಿಳಿಯ ಮಾತುಗಾರಿಕೆಯಿಂದಾಗಿ ಹಾವೇರಿಯಲ್ಲಿ ನನ್ನ ಸ್ನೇಹಿತರ ಸಂಖ್ಯೆ ಬೆಳೆದು, ಇಲ್ಲಿಯ ಸ್ನೇಹಿತರ ಕೂಟದ ಗೆಳೆಯರ ಬಳಗದವರು, ಅದಕ್ಕೆ ಸೇರಿದ ಮೊದಲನೆಯ ವರ್ಷವೇ ಅಧ್ಯಕ್ಷತೆಯನ್ನು ಕೊಡುವ ಮೂಲಕ ನನ್ನನ್ನು ವಿಶೇಷವಾಗಿ ಗೌರವಿಸಿದರು. ಅದಕ್ಕೆ ಏನೋ 1977 ರಲ್ಲಿ ಪ್ರತಿಷ್ಠಿತ ವಿದ್ಯಾನಗರದಲ್ಲಿ ಒಂದು ಮನೆಯನ್ನು ಖರೀಧಿಸುವ ಮೂಲಕ ಹಾವೇರಿಯ ರೆಸಿಡೆಂಟ ನಾಗರಿಕನೂ ಆಗಿ ಬಿಟ್ಟೆ. ಮನಯನ್ನು ಖರೀಧಿಸಿದ ವರ್ಷವೇ ಎರಡನೆಯ ಮಗಳು ನಂದಿನಿ ನಮ್ಮ ಸ್ವಂತ ಮನೆಯಲ್ಲಿ ಹುಟ್ಟಿದ್ದೊಂದು ವಿಶೆಷವಾಗಿತ್ತು.`,
+        extras: null,
+    },
+];
+
+export default function Family() {
+    useEffect(() => {
+        setTimeout(scrollToHashWithOffset, 0);
+    }, []);
+
+    return (
+        <div className={styles.family}>
+            <main>
+                <h1 className={styles.pageTitle}>ಕುಟುಂಬ</h1>
+
+                {sections.map((section, index) => (
+                    <section
+                        key={index}
+                        id={`section-${section.id}`}
+                        className={`${styles.familySection} ${
+                            index % 2 === 0
+                                ? styles.imageLeft
+                                : styles.imageRight
+                        }`}
+                    >
+                        <div className={styles.imageContainer}>
+                            <img
+                                src={section.image}
+                                alt={`Section ${section.id}`}
+                            />
+                        </div>
+
+                        <div className={styles.contentContainer}>
+                            <h2>{section.heading}</h2>
+
+                            <div className={styles.scrollableContent}>
+                                <p>{section.paratext}</p>
+
+                                {section.extras && (
+                                    <div>{section.extras}</div>
+                                )}
+                            </div>
+                        </div>
+                    </section>
+                ))}
+            </main>
+        </div>
+    );
+}

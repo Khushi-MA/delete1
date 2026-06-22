@@ -1,0 +1,54 @@
+/* awards.module.css */
+.awards main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.awards section {
+  background-color: #f9f6f1;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.awards h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+  border-bottom: 2px solid #c8a96e;
+  padding-bottom: 0.5rem;
+}
+
+.awards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.awards li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border-left: 4px solid #c8a96e;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.awards .year {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #c8a96e;
+  min-width: 45px;
+  padding-top: 2px;
+}
+
+.awards .description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}

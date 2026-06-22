@@ -1,0 +1,79 @@
+/* family.module.css */
+
+.family main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.family .pageTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c2c2c;
+  border-bottom: 2px solid #c8a96e;
+  padding-bottom: 0.5rem;
+}
+
+.family .familySection {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background-color: #f9f6f1;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.family .imageLeft {
+  flex-direction: row;
+}
+
+.family .imageRight {
+  flex-direction: row-reverse;
+}
+
+.family .imageContainer {
+  flex: 1;
+}
+
+.family .imageContainer img {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  border-radius: 8px;
+}
+
+.family .contentContainer {
+  flex: 2;
+}
+
+.family .contentContainer h2 {
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+  font-size: 1.5rem;
+}
+
+.family .scrollableContent {
+  color: #444;
+  line-height: 1.8;
+}
+
+.family .scrollableContent p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+  .family .familySection,
+  .family .imageLeft,
+  .family .imageRight {
+    flex-direction: column;
+  }
+
+  .family .imageContainer img {
+    max-width: 100%;
+  }
+
+  .family .pageTitle {
+    font-size: 1.75rem;
+  }
+}
