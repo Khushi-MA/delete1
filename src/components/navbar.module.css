@@ -2,14 +2,15 @@
 
 /* Desktop: fixed vertical left bar */
 .navbar {
-  position: fixed;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+
+  width: 150px;
+  height: 100vh;
+
   background: #0f172a;
   color: #e6eef8;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 150px;
+
   display: flex;
   align-items: flex-start;
   padding-top: 15px;

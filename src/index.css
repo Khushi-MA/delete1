@@ -1,22 +1,17 @@
-/* index.css */
-@media (min-width: 768px) { body { margin-left: 220px; } }
-@media (max-width: 767px) { body { padding-top: 56px; } }
-
-/* Default body font
-Default text color
-Default heading styles
-Margin/padding resets
-Link styling */
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
+.pageLayout {
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.contentArea {
+  flex: 1;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
