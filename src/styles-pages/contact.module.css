@@ -1,22 +1,21 @@
 /* contact.module.css */
 
 .contact main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
+  min-height: 100vh;
 }
 
 .contact section {
   display: flex;
   gap: 2rem;
   align-items: center;
-  background-color: #f9f6f1;
   border-radius: 8px;
   padding: 2rem;
+  /* background-color: var(--colour1); */
 }
 
 .contact .contactImage {
   flex: 1;
+  padding: 2rem;
 }
 
 .contact .contactImage img {
@@ -28,15 +27,16 @@
 
 .contact .contactDetails {
   flex: 2;
+  padding: 2rem;
 }
 
-.contact .contactHeading {
+/* .contact .contactHeading {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #2c2c2c;
   border-bottom: 2px solid #c8a96e;
   padding-bottom: 0.5rem;
-}
+} */
 
 .contact .contactItem {
   margin-bottom: 1.5rem;
@@ -48,11 +48,11 @@
   gap: 0.5rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
-  color: #2c2c2c;
+  color: var(--colour4);
 }
 
 .contact .contactIcon {
-  color: #c8a96e;
+  color: var(--colour3);
   display: flex;
   align-items: center;
 }
@@ -62,9 +62,9 @@
 }
 
 .contact .contactLink {
-  color: #444;
+  color: var(--colourtext1);
   text-decoration: none;
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 .contact .contactLink:hover {

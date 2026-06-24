@@ -1,80 +1,83 @@
-/* work.module.css */
+/* career.module.css */
 
-.work main {
-  max-width: 1200px;
+/* .career main {
+  background-color: var(--colour1);
   margin: 0 auto;
   padding: 2rem;
-}
+} */
 
-.work .pageTitle {
+/* .career .pageTitle {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #2c2c2c;
   border-bottom: 2px solid #c8a96e;
   padding-bottom: 0.5rem;
-}
+} */
 
-.work .workSection {
+.career .workSection {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
-  margin-bottom: 3rem;
-  background-color: #f9f6f1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--colour0);
   border-radius: 8px;
   padding: 2rem;
 }
 
-.work .imageLeft {
+.career .imageLeft {
   flex-direction: row;
 }
 
-.work .imageRight {
+.career .imageRight {
   flex-direction: row-reverse;
 }
 
-.work .imageContainer {
+.career .imageContainer {
   flex: 1;
+  padding: 1rem;
 }
 
-.work .imageContainer img {
+.career .imageContainer img {
   width: 100%;
   max-width: 350px;
   display: block;
   border-radius: 8px;
 }
 
-.work .contentContainer {
+.career .contentContainer {
   flex: 2;
 }
 
-.work .contentContainer h2 {
+/* .career .contentContainer h2 {
   margin-bottom: 1rem;
   color: #2c2c2c;
   font-size: 1.5rem;
-}
+} */
 
-.work .scrollableContent {
+/* .career .scrollableContent {
   color: #444;
   line-height: 1.8;
-}
+} */
 
-.work .scrollableContent p {
+.career .scrollableContent p {
   margin: 0;
   white-space: pre-line;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
-  .work .workSection,
-  .work .imageLeft,
-  .work .imageRight {
+  .career .workSection,
+  .career .imageLeft,
+  .career .imageRight {
     flex-direction: column;
   }
 
-  .work .imageContainer img {
+  .career .imageContainer img {
     max-width: 100%;
   }
 
-  .work .pageTitle {
+  .career .pageTitle {
     font-size: 1.75rem;
   }
 }

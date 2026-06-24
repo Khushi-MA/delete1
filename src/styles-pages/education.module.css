@@ -1,25 +1,26 @@
 /* education.module.css */
 
-.education main {
-  max-width: 1200px;
+/* .education main {
+  background: var(--colour1);
   margin: 0 auto;
   padding: 2rem;
-}
+} */
 
-.education .pageTitle {
+/* .education .pageTitle {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #2c2c2c;
   border-bottom: 2px solid #c8a96e;
   padding-bottom: 0.5rem;
-}
+} */
 
 .education .educationSection {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
-  margin-bottom: 3rem;
-  background-color: #f9f6f1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--colour0);
   border-radius: 8px;
   padding: 2rem;
 }
@@ -34,6 +35,7 @@
 
 .education .imageContainer {
   flex: 1;
+  padding: 1rem;
 }
 
 .education .imageContainer img {
@@ -47,20 +49,17 @@
   flex: 2;
 }
 
-.education .contentContainer h2 {
+/* .education .contentContainer h2 {
   margin-bottom: 1rem;
-  color: #2c2c2c;
+  color: var(--colourtext1);
   font-size: 1.5rem;
-}
+} */
 
-.education .scrollableContent {
-  color: #444;
-  line-height: 1.8;
-}
 
 .education .scrollableContent p {
   margin: 0;
   white-space: pre-line;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {

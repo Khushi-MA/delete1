@@ -1,10 +1,11 @@
 .footer {
   margin-top: auto;
-  background-color: #7bbdff;
+  background-color: var(--colour01);
   border-top: 1px solid var(--border, #ddd);
   padding: 2rem 1rem;
   width: 100%;
   box-sizing: border-box;
+  color: var(--colourtext5);
 }
 
 .icons {
@@ -19,45 +20,52 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #333;
+  color: var(--colourtext5);
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .icons a:hover {
-  color: #0066cc;
+  color: var(--colourtext3);
   transform: scale(1.1);
 }
+
+
 
 .footerNavSections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem 0;
+  gap: 1rem;
+
+  padding-top: 1rem;
+  /* padding: 1rem; */
+
 }
 
 .footerNavGroup {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  text-align: center;
+  text-align: left;
+  padding-left: 30%;
+
 }
 
 .footerNavTitle {
   font-weight: 600;
-  color: #333;
-  text-decoration: none;
+  color: var(--colourtext5);
+
   display: block;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .footerNavTitle:hover {
-  color: #0066cc;
+  color: var(--colourtext3);
 }
 
 .footerSublink {
-  color: #666;
+  color: var(--colourtext3);
   font-size: 0.9rem;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -65,7 +73,7 @@
 }
 
 .footerSublink:hover {
-  color: #0066cc;
+  color: var(--colourtext5);
 }
 
 .developerSection {
@@ -76,28 +84,28 @@
   margin: 2rem 0 1rem 0;
   flex-wrap: wrap;
   padding: 1rem 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid var(--colourtext3);
+  border-bottom: 1px solid var(--colourtext3);
 }
 
 .developerIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #333;
+  color: var(--colourtext5);
   text-decoration: none;
   transition: color 0.3s ease, transform 0.2s ease;
   margin: 0 0.5rem;
 }
 
 .developerIcon:hover {
-  color: #0066cc;
+  color: var(--colourtext3);
   transform: scale(1.1);
 }
 
 .copyright {
   text-align: center;
-  color: #666;
+  color: var(--colourtext4);
   font-size: 0.9rem;
   padding: 1rem 0;
 }

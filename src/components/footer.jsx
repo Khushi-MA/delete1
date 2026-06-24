@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./footer.module.css";
+import styles from "../styles-components/footer.module.css";
 import { Twitter, GitHub, Linkedin, Instagram, Facebook, Mail } from "react-feather";
 
 export default function Footer() {
@@ -39,6 +39,7 @@ export default function Footer() {
 					<a href="/contact" className={styles.footerNavTitle}>ಸಂಪರ್ಕ</a>
 				</div>
 			</div>
+
 			<div className={styles.footerNavSections}>
 				{/* <div className={styles.footerNavGroup}>
 					<a href="/" className={styles.footerNavTitle}>ಮುಖಪುಟ</a>
@@ -48,40 +49,33 @@ export default function Footer() {
 				</div> */}
 				<div className={styles.footerNavGroup}>
 					<a href="/about"><span className={styles.footerNavTitle}>ನನ್ನ ಬಗ್ಗೆ</span></a>
-					{/* <a href="/about#page-hero" className={styles.footerSublink}>ನನ್ನ ಪರಿಚಯ</a>
+					<a href="/about#page-hero" className={styles.footerSublink}>ನನ್ನ ಪರಿಚಯ</a>
 					<a href="/about#my-place" className={styles.footerSublink}>ನಮ್ಮ ಊರು</a>
 					<a href="/about#my-childhood" className={styles.footerSublink}>ನನ್ನ ಬಾಲ್ಯ</a>
 					<a href="/about#education" className={styles.footerSublink}>ಶೈಕ್ಷಣಿಕ ಪಠ್ಯಕ್ರಮ</a>
-					<a href="/about#work-service" className={styles.footerSublink}>ವೃತ್ತಿ ಮತ್ತು ಸೇವೆ</a> */}
+					<a href="/about#career-service" className={styles.footerSublink}>ವೃತ್ತಿ ಮತ್ತು ಸೇವೆ</a>
 				</div>
 				<div className={styles.footerNavGroup}>
 					<a href="/education"><span className={styles.footerNavTitle}>ಶಿಕ್ಷಣ</span></a>
-					{/* <a href="/education#section-1" className={styles.footerSublink}>ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಣ</a>
+					<a href="/education#section-1" className={styles.footerSublink}>ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಣ</a>
 					<a href="/education#section-2" className={styles.footerSublink}>ಪ್ರೌಢಶಾಲೆಯ ಶಿಕ್ಷಣ</a>
 					<a href="/education#section-3" className={styles.footerSublink}>ಕಾಲೇಜು ಶಿಕ್ಷಣ</a>
-					<a href="/education#section-4" className={styles.footerSublink}>ಸ್ನಾತಕೋತ್ತರ ಶಿಕ್ಷಣ</a> */}
+					<a href="/education#section-4" className={styles.footerSublink}>ಸ್ನಾತಕೋತ್ತರ ಶಿಕ್ಷಣ</a>
 				</div>
 				<div className={styles.footerNavGroup}>
-					<a href="/work"><span className={styles.footerNavTitle}>ವೃತ್ತಿ - ಸೇವೆ</span></a>
-					{/* <a href="/work#section-1" className={styles.footerSublink}>ನನ್ನ ಉದ್ಯೋಗಾನ್ವೇಷಣೆ</a>
-					<a href="/work#section-2" className={styles.footerSublink}>ಕಾಲೇಜಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ</a>
-					<a href="/work#section-3" className={styles.footerSublink}>ನಿಪ್ಪಾಣಿ ದಿನಗಳು</a>
-					<a href="/work#section-4" className={styles.footerSublink}>ಹಾವೇರಿ ದಿನಗಳು</a> */}
+					<a href="/career"><span className={styles.footerNavTitle}>ವೃತ್ತಿ - ಸೇವೆ</span></a>
+					<a href="/career#section-1" className={styles.footerSublink}>ನನ್ನ ಉದ್ಯೋಗಾನ್ವೇಷಣೆ</a>
+					<a href="/career#section-2" className={styles.footerSublink}>ಕಾಲೇಜಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ</a>
+					<a href="/career#section-3" className={styles.footerSublink}>ನಿಪ್ಪಾಣಿ ದಿನಗಳು</a>
+					<a href="/career#section-4" className={styles.footerSublink}>ಹಾವೇರಿ ದಿನಗಳು</a>
 				</div>
-				{/* <div className={styles.footerNavGroup}>
-					<a href="/family" className={styles.footerLink}>ಕುಟುಂಬ</a>
-				</div> */}
+
 				<div className={styles.footerNavGroup}>
 					<a href="/books"><span className={styles.footerNavTitle}>ರಚನೆಗಳು</span></a>
-					{/* <a href="/books#books-section2" className={styles.footerSublink}>ಸಾಹಿತ್ಯ ರಚನೆ</a>
-					<a href="/books#periodic-section" className={styles.footerSublink}>ಅಂಕಣಗಳ ಪ್ರಕಟಣೆ</a> */}
+					<a href="/books#books-section2" className={styles.footerSublink}>ಸಾಹಿತ್ಯ ರಚನೆ</a>
+					<a href="/books#periodic-section" className={styles.footerSublink}>ಅಂಕಣಗಳ ಪ್ರಕಟಣೆ</a>
 				</div>
-				{/* <div className={styles.footerNavGroup}>
-					<a href="/awards" className={styles.footerLink}>ಸನ್ಮಾನ ಮತ್ತು ಸತ್ಕಾರ</a>
-				</div> */}
-				{/* <div className={styles.footerNavGroup}>
-					<a href="/contact" className={styles.footerLink}>ಸಂಪರ್ಕ</a>
-				</div> */}
+
 			</div>
 
 

@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&display=swap');
+
+:root{
+  --colourtext0: #000;
+  --colourtext1: #333;
+  --colourtext2: #666;
+  --colourtext3: #999;
+  --colourtext4: #e6eef8;
+  --colourtext5: #ffffff;
+
+  --colour01: #222831;
+  --colour02: #393e46;
+  /* 0f365 */
+  /* 4e0000 red */
+
+  --colour0: white;
+  --colour1: #f8f4eb;
+  --colour2: #dfd0b8;
+  --colour3: #948979;
+  --colour4: #5b544b;
+
+
+  /* --font-family: 'Anek Kannada', sans-serif; */
+  --font-family: "Baloo Tamma 2", system-ui;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+
 .pageLayout {
   display: flex;
   align-items: flex-start;
@@ -8,10 +42,67 @@
   min-height: 100vh;
 }
 
-body {
+/* all h1 with .pagetitle are page title will override h1 default */
+/* all h1 are section titles */
+/* all h2 are sub sections within sections */
+
+
+
+h1{
+  color: #a90000;
+  color: var(--colour4);
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 3px solid var(--colour4);
+  padding-bottom: 0.5rem;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-shadow: 0.5px 0.5px 0px var(--colourtext0);
 }
 
+h2{
+  color: #cac000;
+  color: var(--colourtext1);
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* margin-bottom: 0.4rem; */
+  border-bottom: 2px solid var(--colour3);
+  padding-bottom: 0.4rem;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+
+}
+
+h3{
+  color: green;
+  color: var(--colourtext2);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+h4{
+  color: #00bfff;
+  color: var(--colour4);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+p{
+  color: purple;
+  color: var(--colourtext1);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.8;
+}
+
+
+main{
+  background: var(--colour1);
+  margin: 0 auto;
+  padding: 1.5rem;
+}

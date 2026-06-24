@@ -1,17 +1,18 @@
 // navbar.jsx
 import { NavLink } from "react-router-dom";
-import styles from "./navbar.module.css";
+import styles from "../styles-components/navbar.module.css";
+
 
 export default function Navbar() {
     const links = [
-        { to: "/", label: "Home" },
-        { to: "/about", label: "About" },
-        { to: "/awards", label: "Awards" },
-        { to: "/books", label: "Books" },
-        { to: "/education", label: "Education" },
-        { to: "/family", label: "Family" },
-        { to: "/work", label: "Work" },
-        { to: "/contact", label: "Contact" },
+        { to: "/", label: "ಮುಖಪುಟ" },
+        // { to: "/about", label: "About" },
+        { to: "/awards", label: "ಅಭಿನಂದನೆ" },
+        { to: "/books", label: "ರಚನೆಗಳು" },
+        { to: "/education", label: "ಶಿಕ್ಷಣ" },
+        { to: "/family", label: "ಕುಟುಂಬ" },
+        { to: "/career", label: "ವೃತ್ತಿ - ಸೇವೆ" },
+        { to: "/contact", label: "ಸಂಪರ್ಕ" },
     ];
 
     return (

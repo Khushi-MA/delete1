@@ -1,21 +1,29 @@
 /* books.module.css */
 
 .books main {
-  max-width: 1000px;
+  /* background-color: var(--colour1);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem; */
+
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  /* gap: 1rem; */
 }
 
-.books section h1 {
+.books section{
+  /* max-width: 900px; */
+  padding: 2rem;
+  padding-top: 1rem;
+  /* padding-bottom: 2rem; */
+}
+
+/* .books section h1 {
   font-size: 1.6rem;
   color: #2c2c2c;
   border-bottom: 2px solid #c8a96e;
   padding-bottom: 0.4rem;
   margin-bottom: 1.5rem;
-}
+} */
 
 /* --- Books Grid --- */
 .booksList {
@@ -27,9 +35,9 @@
 .bookCard {
   border-radius: 8px;
   padding: 0.75rem;
-  border: 1px solid #e8e0d0;
+  border-left: 2px solid var(--colour3);
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  background: #fff;
+  background: var(--colour0);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -63,8 +71,8 @@
   text-align: center;
   font-size: 0.85rem;
   font-weight: 600;
-  background-color: #f5f0e8;
-  color: #666;
+  background-color: var(--colour2);
+  color: var(--colourtext1);
   border-radius: 4px;
   padding: 0.5rem;
 }
@@ -72,37 +80,43 @@
 .bookDetails {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   gap: 0.25rem;
   width: 100%;
 }
 
-.bookTitle {
+/* .bookTitle {
   font-size: 0.9rem;
   font-weight: 600;
   color: #2c2c2c;
   margin: 0;
-}
+} */
 
 .bookSubtitle {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--colourtext2);
   margin: 0;
 }
 
 .bookYear {
   font-size: 0.75rem;
-  color: #c8a96e;
+  color: var(--colour3);
   font-weight: 600;
 }
 
 .bookDesc {
   font-size: 0.78rem;
+}
+
+/* .bookDesc {
+  font-size: 0.78rem;
   color: #666;
   line-height: 1.5;
   margin: 0;
-}
+} */
+
+
 
 /* --- Periodic Publications --- */
 .periodicGrid {
@@ -112,10 +126,10 @@
 }
 
 .periodicCard {
-  background: #fff;
+  background: var(--colour0);
   border-radius: 8px;
   padding: 1.2rem;
-  border-left: 4px solid #c8a96e;
+  border-left: 4px solid var(--colour3);
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -125,12 +139,12 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.periodicCard p {
+/* .periodicCard p {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #555;
+  color: var(--colourtext2);
   margin: 0;
-}
+} */
 
 /* --- Responsive --- */
 @media (max-width: 600px) {

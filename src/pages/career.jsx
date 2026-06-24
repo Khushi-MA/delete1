@@ -1,7 +1,7 @@
-// work.jsx
+// career.jsx
 
 import React, { useEffect } from "react";
-import styles from "../styles-pages/work.module.css";
+import styles from "../styles-pages/career.module.css";
 
 import selfimg01 from "../assets/image.jpeg";
 import selfimg02 from "../assets/image.jpeg";
@@ -61,13 +61,13 @@ const sections = [
     },
 ];
 
-export default function Work() {
+export default function Career() {
     useEffect(() => {
         setTimeout(scrollToHashWithOffset, 0);
     }, []);
 
     return (
-        <div className={styles.work}>
+        <div className={styles.career}>
             <main>
                 <h1 className={styles.pageTitle}>ನನ್ನ ಕೆಲಸ</h1>
 
