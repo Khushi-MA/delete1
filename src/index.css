@@ -39,7 +39,7 @@ body {
 
 .contentArea {
   flex: 1;
-  min-height: 100vh;
+  padding: 2rem;
 }
 
 /* all h1 with .pagetitle are page title will override h1 default */
@@ -104,5 +104,7 @@ p{
 main{
   background: var(--colour1);
   margin: 0 auto;
-  padding: 1.5rem;
+  min-height: 100vh;
+  /* padding: 1.5rem; */
 }
+

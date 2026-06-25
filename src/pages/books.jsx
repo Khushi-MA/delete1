@@ -1,7 +1,5 @@
-// books.jsx
 import styles from '../styles-pages/books.module.css';
-import bookImage from '../assets/image.jpeg';
-import booklist from '../data/booklist.json';
+import booklist from '../data/books.json';
 import periodicPublications from '../data/periodicPublications.json';
 
 export default function Books() {
@@ -21,7 +19,8 @@ export default function Books() {
               <div className={styles.bookCard} key={idx}>
                 <div className={styles.bookContent}>
                   {book.image
-                    ? <img src={book.image} alt={book.title} className={styles.bookImage} />
+                  
+                    ? <img src={`${import.meta.env.BASE_URL}${book.image}`} alt={book.title} className={styles.bookImage} />
                     : <div className={`${styles.bookImage} ${styles.noBookImage}`}>{book.title}</div>
                   }
                   <div className={styles.bookDetails}>

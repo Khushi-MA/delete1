@@ -1,21 +1,17 @@
-/* contact.module.css */
-
-.contact main {
-  min-height: 100vh;
-}
-
 .contact section {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   border-radius: 8px;
-  padding: 2rem;
-  /* background-color: var(--colour1); */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  margin: 0;
+  /* background-color: blue; */
 }
 
 .contact .contactImage {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .contact .contactImage img {
@@ -68,7 +64,8 @@
 }
 
 .contact .contactLink:hover {
-  color: #c8a96e;
+  color: var(--colour2);
+  text-shadow: 0.5px 0.5px 0.5px var(--colourtext2);;
 }
 
 @media (max-width: 768px) {

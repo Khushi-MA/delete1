@@ -1,9 +1,6 @@
-// contact.jsx
-
 import React from 'react';
 import styles from '../styles-pages/contact.module.css';
 import { Phone, Mail, Instagram, Linkedin } from 'react-feather';
-import contactImage from '../assets/image.jpeg';
 
 export default function Contact() {
   return (
@@ -11,7 +8,7 @@ export default function Contact() {
       <main>
         <section>
           <div className={styles.contactImage}>
-            <img src={contactImage} alt="Contact" />
+            <img src={`${import.meta.env.BASE_URL}contact/image.jpg`} alt="background-image-contact"/>
           </div>
 
           <div className={styles.contactDetails}>
