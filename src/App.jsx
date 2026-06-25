@@ -16,7 +16,7 @@ import Career from "./pages/career";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="pageLayout">
         <Navbar />
 
