@@ -4,9 +4,6 @@
   align-items: center;
   border-radius: 8px;
   margin: 0 auto;
-  /* padding: 2rem; */
-  margin: 0;
-  /* background-color: blue; */
 }
 
 .contact .contactImage {
@@ -25,14 +22,6 @@
   flex: 2;
   padding: 2rem;
 }
-
-/* .contact .contactHeading {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #2c2c2c;
-  border-bottom: 2px solid #c8a96e;
-  padding-bottom: 0.5rem;
-} */
 
 .contact .contactItem {
   margin-bottom: 1.5rem;

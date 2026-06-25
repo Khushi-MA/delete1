@@ -1,0 +1,50 @@
+[
+  {
+    "name": "phone",
+    "label": "ದೂರವಾಣಿ",
+    "value": "+91 94482 36141",
+    "href": "tel:+919448236141",
+    "icon": "Phone",
+    "external": false
+  },
+  {
+    "name": "email",
+    "label": "ಇ-ಮೇಲ್",
+    "value": "korgal123@gmail.com",
+    "href": "mailto:korgal123@gmail.com",
+    "icon": "Mail",
+    "external": false
+  },
+  {
+    "name": "instagram",
+    "label": "ಇನ್‌ಸ್ಟಾಗ್ರಾಂ",
+    "value": "@abcd-123",
+    "href": "https://instagram.com/abcd-123",
+    "icon": "Instagram",
+    "external": true
+  },
+  {
+    "name": "linkedin",
+    "label": "ಲಿಂಕ್ಡ್‌ಇನ್",
+    "value": "Virupaxappa Korgal",
+    "href": "https://www.linkedin.com/in/virupaxappa-korgal-6a380535/",
+    "icon": "Linkedin",
+    "external": true
+  },
+  {
+    "name": "facebook",
+    "label": "ಫೇಸ್‌ಬುಕ್",
+    "value": "Virupaxappa Korgal",
+    "href": "https://facebook.com/your-profile",
+    "icon": "Facebook",
+    "external": true
+  },
+  {
+    "name": "toodle",
+    "label": "ಫೇಸ್‌",
+    "value": "viru toodle",
+    "href": "https://google.com",
+    "icon": "",
+    "external": true
+  }
+]
