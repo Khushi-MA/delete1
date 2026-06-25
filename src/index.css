@@ -42,6 +42,12 @@ body {
   padding: 2rem;
 }
 
+@media (max-width: 767px) {
+  .pageLayout {
+    flex-direction: column;
+  }
+}
+
 /* all h1 with .pagetitle are page title will override h1 default */
 /* all h1 are section titles */
 /* all h2 are sub sections within sections */

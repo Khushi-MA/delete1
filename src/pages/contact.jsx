@@ -21,26 +21,34 @@ export default function Contact() {
           </div>
           <div className={styles.contactDetails}>
             <h1 className={styles.contactHeading}>ಸಂಪರ್ಕ</h1>
-            {contactlist.map((item) => {
-              const IconComponent = icons[item.icon] || Link;
-              return (
-                <div key={item.name} className={styles.contactItem}>
-                  <div className={styles.contactLabel}>
-                    <span className={styles.contactIcon}>
-                      <IconComponent size={20} />
-                    </span>
-                    <span className={styles.contactName}>{item.label}:</span>
+
+            <div className={styles.contactTable}>
+              {contactlist.map((item) => {
+                const IconComponent = icons[item.icon] || Link;
+
+                return (
+                  <div key={item.name} className={styles.contactRow}>
+                    <div className={styles.contactLabel}>
+                      <span className={styles.contactIcon}>
+                        <IconComponent size={20} />
+                      </span>
+                      <span className={styles.contactName}>{item.label}:</span>
+                    </div>
+
+                    <a
+                      href={item.href}
+                      className={styles.contactLink}
+                      {...(item.external && {
+                        target: '_blank',
+                        rel: 'noopener noreferrer',
+                      })}
+                    >
+                      {item.value}
+                    </a>
                   </div>
-                  
-                    <a href={item.href}
-                    className={styles.contactLink}
-                    {...(item.external && { target: '_blank', rel: 'noopener noreferrer' })}
-                  >
-                    {item.value}
-                  </a>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </section>
       </main>
