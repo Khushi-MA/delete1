@@ -1,17 +1,41 @@
 // home.jsx
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import styles from '../styles-pages/home.module.css';
-import contactImage from '../assets/image.jpeg';
+import contactImage from '../assets/image.jpg';
 
 export default function Home() {
+  const introRef = useRef(null);
+
+  useEffect(() => {
+    const el = introRef.current;
+    if (!el) return;
+    // trigger animation after mount
+    requestAnimationFrame(() => el.classList.add(styles.visible));
+  }, []);
+
   return (
     <div className={styles.home}>
       <main>
 
-        {/* --- Story Sections --- */}
-        <h1 className={styles.pageTitle}>ಗಣಿತ ಪ್ರಾಧ್ಯಾಪಕರಾಗಿ ಸೇವೆ </h1>
-        <p className={styles.intro}>my introduction needs to be written here with a photo</p>
+        {/* --- Intro --- */}
+        <section className={`${styles.introSection} ${styles.fadeIn}`} ref={introRef}>
 
+          {/* Desktop: normal image. Mobile: becomes CSS background via the wrapper */}
+          <div className={styles.introImageWrapper}>
+            <img src={contactImage} alt="Introduction photo" className={styles.introImage} />
+            <div className={styles.mobileOverlay} />
+          </div>
+
+          <div className={styles.introContent}>
+            <p className={styles.introEyebrow}>ಗಣಿತ ಪ್ರಾಧ್ಯಾಪಕ · ಕವಿ · ಸಾಹಿತಿ</p>
+            <h1 className={styles.pageTitle}>ವಿರೂಪಾಕ್ಷಪ್ಪ ಕೊರ್ಗಲ್</h1>
+            <p className={styles.intro}>
+              ನಾನು ಗಣಿತ ಪ್ರಾಧ್ಯಾಪಕರಾಗಿ ಹಲವಾರು ವರ್ಷಗಳ ಕಾಲ ಶೈಕ್ಷಣಿಕ ಕ್ಷೇತ್ರದಲ್ಲಿ
+              ಸೇವೆ ಸಲ್ಲಿಸಿದ್ದೇನೆ. ಇಲ್ಲಿ ನೀವು ನನ್ನ ಶಿಕ್ಷಣ, ಅನುಭವ ಮತ್ತು ಸೇವೆಯ ಕಥನವನ್ನು
+              ಓದಬಹುದು.
+            </p>
+          </div>
+        </section>
 
         {/* --- Education --- */}
         <section className={styles.education}>
@@ -24,7 +48,7 @@ export default function Home() {
             <div className={styles.card}>
               <h3>ಪದವಿ</h3>
               <h4>ಜೆ.ಟಿ.ಕಾಲೇಜ್, ಗದಗ</h4>
-              <p>Year: 1965 · ಬಿ.ಎ. ಗಣಿತ</p>
+              <p>1965 · ಬಿ.ಎ. ಗಣಿತ</p>
             </div>
             <div className={styles.card}>
               <h3>ಸ್ನಾತಕೋತ್ತರ</h3>

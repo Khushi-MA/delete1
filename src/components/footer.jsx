@@ -2,53 +2,12 @@
 import styles from "../styles-components/footer.module.css";
 import { NavLink } from "react-router-dom";
 import { Twitter, GitHub, Linkedin, Instagram, Facebook, Mail, Link } from "react-feather";
+
 import contactlist from "../data/socials.json";
+import simpleLinks from "../data/footer-simpleLinks.json"
+import subLinks from "../data/footer-subLinks.json"
 
 const icons = { Phone: null, Mail, Instagram, Linkedin, Facebook, Twitter, GitHub };
-
-const simpleLinks = [
-  { to: "/", label: "ಮುಖಪುಟ" },
-  { to: "/family", label: "ಕುಟುಂಬ" },
-  { to: "/awards", label: "ಸನ್ಮಾನ ಮತ್ತು ಸತ್ಕಾರ" },
-  { to: "/contact", label: "ಸಂಪರ್ಕ" },
-];
-
-const subLinks = [
-  {
-    to: "/about", label: "ನನ್ನ ಬಗ್ಗೆ",
-    sub: [
-      { to: "/about#page-hero", label: "ನನ್ನ ಪರಿಚಯ" },
-      { to: "/about#my-place", label: "ನಮ್ಮ ಊರು" },
-      { to: "/about#my-childhood", label: "ನನ್ನ ಬಾಲ್ಯ" },
-      { to: "/about#education", label: "ಶೈಕ್ಷಣಿಕ ಪಠ್ಯಕ್ರಮ" },
-    ]
-  },
-  {
-    to: "/education", label: "ಶಿಕ್ಷಣ",
-    sub: [
-      { to: "/education#section-1", label: "ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಣ" },
-      { to: "/education#section-2", label: "ಪ್ರೌಢಶಾಲೆಯ ಶಿಕ್ಷಣ" },
-      { to: "/education#section-3", label: "ಕಾಲೇಜು ಶಿಕ್ಷಣ" },
-      { to: "/education#section-4", label: "ಸ್ನಾತಕೋತ್ತರ ಶಿಕ್ಷಣ" },
-    ]
-  },
-  {
-    to: "/work", label: "ವೃತ್ತಿ - ಸೇವೆ",
-    sub: [
-      { to: "/work#section-1", label: "ನನ್ನ ಉದ್ಯೋಗಾನ್ವೇಷಣೆ" },
-      { to: "/work#section-2", label: "ಕಾಲೇಜಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ" },
-      { to: "/work#section-3", label: "ನಿಪ್ಪಾಣಿ ದಿನಗಳು" },
-      { to: "/work#section-4", label: "ಹಾವೇರಿ ದಿನಗಳು" },
-    ]
-  },
-  {
-    to: "/books", label: "ರಚನೆಗಳು",
-    sub: [
-      { to: "/books#books-section2", label: "ಸಾಹಿತ್ಯ ರಚನೆ" },
-      { to: "/books#periodic-section", label: "ಅಂಕಣಗಳ ಪ್ರಕಟಣೆ" },
-    ]
-  },
-];
 
 export default function Footer() {
   return (

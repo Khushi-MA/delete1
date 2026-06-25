@@ -15,6 +15,8 @@
   align-items: flex-start;
   padding-top: 15px;
   padding-left: 5px;
+
+  z-index: 1000;
 }
 
 .navInner {
@@ -40,7 +42,7 @@ width: 100%;
   display: block;
   width: 100%;
   padding: 15px 18px;
-  color: #e6eef8;
+  color: var(--colourtext5);
   text-decoration: none;
   font-weight: 500;
   border-radius: 6px;
@@ -49,14 +51,14 @@ width: 100%;
 }
 
 .navLink:hover {
-  color: #60a5fa;
+  color: var(--colour1);
   background: rgba(96, 165, 250, 0.08);
 }
 
 .active {
   color: #60a5fa;
   background: rgba(96, 165, 250, 0.12);
-  border-left: 3px solid #60a5fa;
+  border-left: 3px solid var(--colour04);
   padding-left: 15px;
 }
 
@@ -67,7 +69,7 @@ width: 100%;
     left: 0;
     right: 0;
     bottom: unset;
-    width: 100%;
+    width: 95%;
     height: auto;
     padding: 8px 12px;
     justify-content: center;

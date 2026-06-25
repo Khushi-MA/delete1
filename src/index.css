@@ -11,8 +11,12 @@
 
   --colour01: #222831;
   --colour02: #393e46;
-  /* 0f365 */
-  /* 4e0000 red */
+
+  --colour03: #0f3650;
+  --colour04: #4e0000;
+  --colour05: #6c969d;
+  --colour06: #7ca3d2;
+  --colour07: #56729a;
 
   --colour0: white;
   --colour1: #f8f4eb;
@@ -27,7 +31,7 @@
 
 body {
   margin: 0;
-  background-color: #f0f2f5;
+  background-color: var(--colour1);
   font-weight: 400;
   font-family: var(--font-family);
 }
@@ -114,3 +118,14 @@ main{
   /* padding: 1.5rem; */
 }
 
+@media (max-width: 450px) {
+  .contentArea {
+    flex: 1;
+    padding: 1.5rem;
+  }
+
+  section{
+    padding: 1.5rem;
+  }
+
+}

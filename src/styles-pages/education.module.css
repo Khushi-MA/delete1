@@ -76,4 +76,9 @@
   .education .pageTitle {
     font-size: 1.75rem;
   }
+
+  section{
+    padding: 1.5rem;
+  }
+
 }

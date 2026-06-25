@@ -1,67 +1,207 @@
+/* home.module.css */
+
 .home main {
-  /* max-width: 900px; */
-  /* background: var(--colour1);
-  margin: 0 auto;
-  padding: 2rem; */
-  
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-
+  gap: 2.5rem;
 }
 
+/* ── Animation ── */
+.fadeIn {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Intro — Desktop ── */
+.introSection {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  min-height: 340px;
+}
+
+.introImageWrapper {
+  position: relative;
+  flex: 0 0 30%;
+  width: 30%;
+}
+
+.introImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* hidden on desktop */
+.mobileOverlay { display: none; }
+
+.introContent {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--colour0, #fff);
+}
+
+.introEyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--colour3, #c8a96e);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: var(--colourtext1, #1a1a1a);
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.intro {
+  color: var(--colourtext3, #555);
+  line-height: 1.9;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .introSection {
+    flex-direction: column;
+    position: relative;
+    min-height: 420px;
+  }
+
+  /* image fills the whole section as background */
+  .introImageWrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    flex: none;
+    z-index: -1;
+  }
+
+  .introImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0;
+  }
+
+  /* dark overlay */
+  .mobileOverlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  /* content sits on top */
+  .introContent {
+    position: relative;
+    z-index: 0;
+    background: transparent;
+    padding: 2rem 1.5rem;
+    margin-top: auto;
+  }
+
+  .pageTitle {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .introEyebrow {
+    color: #f0c97a;
+  }
+
+  .intro {
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+/* ── Education & Career shared ── */
+.home section h2 {
+  font-size: 1.4rem;
+  color: var(--colourtext1, #2c2c2c);
+  border-bottom: 2px solid var(--colour3, #c8a96e);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.home section h3 {
+  font-size: 1rem;
+  color: var(--colourtext3, #666);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
 
 .cards {
   display: flex;
-  gap: 1.2rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .card {
   flex: 1;
-  min-width: 200px;
-  background: var(--colour0);
+  min-width: 180px;
+  background: var(--colour0, #fff);
   border-radius: 8px;
   padding: 1.2rem;
-  border-left: 4px solid var(--colour3);
+  border-left: 4px solid var(--colour3, #c8a96e);
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
 
-/* .card h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #2c2c2c;
-  margin-bottom: 0.3rem;
-} */
-
-/* .card h4 {
+.card h3 {
   font-size: 0.95rem;
-  color: #555;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-} */
+  font-weight: 700;
+  color: var(--colourtext1, #2c2c2c);
+  margin-bottom: 0.3rem;
+}
 
-/* .card p {
+.card h4 {
   font-size: 0.9rem;
-  color: #777;
-  margin: 0.2rem 0;
-} */
+  color: var(--colourtext3, #555);
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
 
-/* Career card specifics */
-/* .years {
+.card p {
+  font-size: 0.85rem;
+  color: var(--colourtext4, #777);
+  margin: 0.15rem 0;
+}
+
+.years {
   font-weight: 700;
-  font-size: 1rem;
-  color: #c8a96e;
+  color: var(--colour3, #c8a96e);
   margin-bottom: 0.3rem;
-} */
-
-/* .college {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 0.2rem;
 }
 
 .place {
   font-size: 0.85rem;
-  color: #888;
-} */
+  color: var(--colourtext2);
+  color: black;
+}
+
+@media (max-width: 450px) {
+
+  section{
+    padding: 1.5rem;
+  }
+
+}

@@ -53,3 +53,17 @@
   /* color: ; */
   line-height: 1.6;
 }
+
+@media (max-width: 450px){
+  .awards li {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  section{
+    padding: 1.5rem;
+  }
+
+}

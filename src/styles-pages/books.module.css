@@ -167,4 +167,8 @@
     align-items: flex-start;
     text-align: left;
   }
+
+  section{
+    padding: 1.5rem;
+  }
 }
