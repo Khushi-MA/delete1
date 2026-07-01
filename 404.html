@@ -1,15 +1,395 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <script>
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.host + l.pathname.split('/').slice(0, 2).join('/') +
-        '/?p=/' + l.pathname.slice(1).replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
-  </head>
+<html lang="kn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    var l = window.location;
+    l.replace(
+      l.protocol + '//' + l.host + l.pathname.split('/').slice(0, 2).join('/') +
+      '/?p=/' + l.pathname.slice(1).replace(/&/g, '~and~') +
+      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+
+  <title>404 - ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #f3f3f3;
+      font-family:
+        "baloo Tamma 2",
+        sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    /* Window */
+
+    .nf-nudi-window {
+      width: min(1200px, 100%);
+      background: white;
+      border: 1px solid #cfcfcf;
+      box-shadow:
+        0 10px 35px rgba(0, 0, 0, .12);
+    }
+
+    /* Header */
+
+    .window-header {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      padding: 0 20px;
+
+      background:
+        linear-gradient(to bottom,
+          #fafafa,
+          #efefef);
+
+      border-bottom: 1px solid #d6d6d6;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+    }
+
+    .title {
+      font-size: 1.6rem;
+      color: #222;
+    }
+
+    /* nf-toolbar */
+
+    .nf-toolbar {
+      height: 70px;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      padding: 0 20px;
+
+      background: #fafafa;
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    .nf-tool {
+      width: 54px;
+      height: 42px;
+
+      background: white;
+      border: 1px solid #d0d0d0;
+      border-radius: 4px;
+      padding: 0px 2px;
+      font-size: 1.5rem;
+    }
+
+
+
+    /* Main Content */
+
+    .nf-error-content {
+      display: flex;
+      gap: 5rem;
+
+      padding: 4rem;
+      align-items: center;
+    }
+
+    /* nf-paper */
+
+    .nf-paper {
+      position: relative;
+
+      width: 280px;
+      height: 380px;
+
+      background:
+        linear-gradient(135deg,
+          #fff8d7,
+          #fff2ba);
+
+      border: 1px solid #d4c89b;
+
+      box-shadow:
+        0 10px 20px rgba(0, 0, 0, .08);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nf-paper-corner {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 45px;
+      height: 45px;
+
+      background: white;
+
+      clip-path: polygon(0 0,
+          100% 100%,
+          100% 0);
+
+      border-left: 1px solid #d4c89b;
+      border-bottom: 1px solid #d4c89b;
+    }
+
+    .nf-number {
+      font-size: 7rem;
+      font-weight: 300;
+      color: #333;
+    }
+
+    .nf-paper-text {
+      margin-top: 10px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    /* Text Section */
+
+    .nf-message {
+      flex: 1;
+    }
+
+    .nf-message h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .nf-underline {
+      width: 100%;
+      max-width: 700px;
+      height: 3px;
+      background: #4d89d8;
+
+      margin: 1rem 0 2rem;
+    }
+
+    .nf-message p {
+      font-size: 1.3rem;
+      line-height: 1.9;
+      color: #444;
+
+      max-width: 650px;
+    }
+
+    /* Buttons */
+
+    .nf-actions {
+      margin-top: 2.5rem;
+
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    button,
+    .home-btn {
+      text-decoration: none;
+
+      padding: 14px 28px;
+
+      border: 1px solid #c9c9c9;
+      background: white;
+
+      color: #222;
+      font-size: 1.1rem;
+
+      border-radius: 4px;
+      cursor: pointer;
+
+      transition: .2s;
+    }
+
+    button:hover,
+    .home-btn:hover {
+      background: #f2f2f2;
+    }
+
+    /* nf-tip */
+
+    .nf-tip {
+      margin-top: 3rem;
+      padding-top: 2rem;
+
+      border-top: 1px solid #e5e5e5;
+
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nf-tip span {
+      font-size: 2rem;
+    }
+
+    .nf-tip p {
+      font-size: 1.05rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width:900px) {
+
+      .nf-error-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+      }
+
+      .nf-actions {
+        justify-content: center;
+      }
+
+      .nf-message h1 {
+        font-size: 2rem;
+      }
+
+      .nf-paper {
+        width: 220px;
+        height: 300px;
+      }
+
+      .nf-number {
+        font-size: 5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nf-nudi-window">
+
+    <!-- Fake Nudi Header -->
+    <div class="window-header">
+      <div class="logo">✒</div>
+      <div class="title">ತಪ್ಪು 404 - ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ</div>
+    </div>
+
+    <!-- nf-toolbar -->
+    <!-- <div class="nf-toolbar">
+        <div class="nf-tool"></div>
+        <div class="nf-tool"></div>
+        <div class="nf-tool"></div>
+        <div class="nf-tool"></div>
+        <div class="nf-tool"></div>
+        <div class="nf-tool"></div>
+    </div> -->
+
+    <div class="nf-toolbar">
+      <button class="nf-tool">📄</button>
+      <button class="nf-tool">📁</button>
+      <button class="nf-tool">💾</button>
+      <button class="nf-tool">🖨️</button>
+      <button class="nf-tool">✂️</button>
+      <button class="nf-tool">📋</button>
+      <button class="nf-tool">↶</button>
+      <button class="nf-tool">↷</button>
+    </div>
+
+    <!-- <div class="nf-toolbar">
+        <button class="nf-tool">
+            <i class="fa-regular fa-file"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-regular fa-folder-open"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-solid fa-print"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-solid fa-scissors"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-regular fa-copy"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+        </button>
+        <button class="nf-tool">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+    </div> -->
+
+    <!-- Content -->
+    <main class="nf-error-content">
+
+      <div class="nf-paper">
+        <div class="nf-paper-corner"></div>
+
+        <div class="nf-number">404</div>
+
+        <div class="nf-paper-text">
+          ಪುಟ ಕಂಡುಬಂದಿಲ್ಲ
+        </div>
+      </div>
+
+      <div class="nf-message">
+
+        <h1>ಅಯ್ಯೋ! ನೀವು ಹುಡುಕಿದ ಪುಟ ಇಲ್ಲಿಗೆ ಸಿಕ್ಕಿಲ್ಲ.</h1>
+
+        <div class="nf-underline"></div>
+
+        <p>
+          ನೀವು ಹುಡುಕುತ್ತಿರುವ ಪುಟವನ್ನು ಸ್ಥಳಾಂತರಿಸಿರಬಹುದು,
+          ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿರಬಹುದು ಅಥವಾ
+          ಅದು ತಾತ್ಕಾಲಿಕವಾಗಿ ಲಭ್ಯವಿಲ್ಲ.
+        </p>
+
+        <div class="nf-actions">
+          <button onclick="history.back()">
+            ← ಹಿಂದೆ ಹೋಗಿ
+          </button>
+
+          <a href="/" class="home-btn">
+            ⌂ ಮುಖ್ಯ ಪುಟಕ್ಕೆ ಹೋಗಿ
+          </a>
+        </div>
+
+        <div class="nf-tip">
+          <span>💡</span>
+          <p>
+            ಸಲಹೆ: ಮೇಲಿನ ಮೆನು ಅಥವಾ ಹುಡುಕಾಟದ ಮೂಲಕ
+            ಬೇಕಾದ ವಿಷಯವನ್ನು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.
+          </p>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+
 </html>
