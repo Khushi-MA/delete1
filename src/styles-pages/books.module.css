@@ -55,7 +55,7 @@
 }
 
 .bookImage {
-  width: 7.5rem;
+  width: 6.75rem;
   height: 10.5rem;
   border-radius: 4px;
   object-fit: cover;
@@ -72,7 +72,7 @@
   font-size: 0.85rem;
   font-weight: 600;
   background-color: var(--colour2);
-  color: var(--colourtext1);
+  color: var(--textcolour4);
   border-radius: 4px;
   padding: 0.5rem;
 }
@@ -86,16 +86,17 @@
   width: 100%;
 }
 
-/* .bookTitle {
+.bookTitle {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #2c2c2c;
+  color: var(--colour05);
+  text-shadow: 0.5px 0.5px var(--colour4);
   margin: 0;
-} */
+}
 
 .bookSubtitle {
   font-size: 0.8rem;
-  color: var(--colourtext2);
+  color: var(--textcolour3);
   margin: 0;
 }
 
@@ -142,7 +143,7 @@
 /* .periodicCard p {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: var(--colourtext2);
+  color: var(--textcolour3);
   margin: 0;
 } */
 

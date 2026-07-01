@@ -48,14 +48,14 @@
 }
 
 .contact .contactLink {
-  color: var(--colourtext1);
+  color: var(--textcolour4);
   text-decoration: none;
   /* line-height: 1.6; */
 }
 
 .contact .contactLink:hover {
   color: var(--colour2);
-  text-shadow: 0.5px 0.5px 0.5px var(--colourtext2);;
+  text-shadow: 0.5px 0.5px 0.5px var(--textcolour3);;
 }
 
 
@@ -86,7 +86,7 @@
 }
 
 .contact .contactLink {
-  color: var(--colourtext1);
+  color: var(--textcolour4);
   text-decoration: none;
   word-break: break-word;
 }

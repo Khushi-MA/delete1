@@ -65,13 +65,13 @@
 
 .pageTitle {
   font-size: 2rem;
-  color: var(--colourtext1, #1a1a1a);
+  color: var(--textcolour4, #1a1a1a);
   margin: 0 0 1rem 0;
   line-height: 1.3;
 }
 
 .intro {
-  color: var(--colourtext3, #555);
+  color: var(--textcolour2, #555);
   line-height: 1.9;
   font-size: 1rem;
   margin: 0;
@@ -137,7 +137,7 @@
 /* ── Education & Career shared ── */
 .home section h2 {
   font-size: 1.4rem;
-  color: var(--colourtext1, #2c2c2c);
+  color: var(--textcolour4, #2c2c2c);
   border-bottom: 2px solid var(--colour3, #c8a96e);
   padding-bottom: 0.4rem;
   margin-bottom: 1rem;
@@ -145,7 +145,7 @@
 
 .home section h3 {
   font-size: 1rem;
-  color: var(--colourtext3, #666);
+  color: var(--textcolour2, #666);
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -169,20 +169,20 @@
 .card h3 {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--colourtext1, #2c2c2c);
+  color: var(--textcolour4, #2c2c2c);
   margin-bottom: 0.3rem;
 }
 
 .card h4 {
   font-size: 0.9rem;
-  color: var(--colourtext3, #555);
+  color: var(--textcolour2, #555);
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
 
 .card p {
   font-size: 0.85rem;
-  color: var(--colourtext4, #777);
+  color: var(--textcolour4, #777);
   margin: 0.15rem 0;
 }
 
@@ -194,14 +194,12 @@
 
 .place {
   font-size: 0.85rem;
-  color: var(--colourtext2);
+  color: var(--textcolour3);
   color: black;
 }
 
 @media (max-width: 450px) {
-
   section{
     padding: 1.5rem;
   }
-
 }

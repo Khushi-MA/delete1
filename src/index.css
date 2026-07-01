@@ -2,21 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&display=swap');
 
 :root{
-  --colourtext0: #000;
-  --colourtext1: #333;
-  --colourtext2: #666;
-  --colourtext3: #999;
-  --colourtext4: #e6eef8;
-  --colourtext5: #ffffff;
+  --textcolour0: #ffffff;
+  --textcolour1: #e6eef8;
+  --textcolour2: #999;
+  --textcolour3: #666;
+  --textcolour4: #333;
+  --textcolour5: #000;
 
   --colour01: #222831;
   --colour02: #393e46;
 
   --colour03: #0f3650;
   --colour04: #4e0000;
-  --colour05: #6c969d;
+  --colour05: #7ab4be;
   --colour06: #7ca3d2;
-  --colour07: #56729a;
 
   --colour0: white;
   --colour1: #f8f4eb;
@@ -68,12 +67,12 @@ h1{
   margin: 0;
   margin-top: 0;
   margin-bottom: 1rem;
-  text-shadow: 0.5px 0.5px 0px var(--colourtext0);
+  text-shadow: 0.5px 0.5px 0px var(--textcolour5);
 }
 
 h2{
   color: #cac000;
-  color: var(--colourtext1);
+  color: var(--textcolour4);
   font-size: 1.5rem;
   font-weight: 600;
   /* margin-bottom: 0.4rem; */
@@ -87,7 +86,7 @@ h2{
 
 h3{
   color: green;
-  color: var(--colourtext2);
+  color: var(--textcolour3);
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
@@ -103,7 +102,7 @@ h4{
 
 p{
   color: purple;
-  color: var(--colourtext1);
+  color: var(--textcolour4);
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
@@ -127,5 +126,4 @@ main{
   section{
     padding: 1.5rem;
   }
-
 }
