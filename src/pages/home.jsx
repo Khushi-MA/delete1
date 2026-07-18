@@ -42,8 +42,9 @@ export default function Home() {
           <h2>ಶೈಕ್ಷಣಿಕ ಪಠ್ಯಕ್ರಮ</h2>
           <div className={styles.cards}>
             <div className={styles.card}>
-              <h3>ಪ್ರಾಥಮಿಕ ಹಾಗು ಮಾದ್ಯಮಿಕ</h3>
+              <h3>ಪ್ರಾಥಮಿಕ ಹಾಗು ಮಾದ್ಯಮಿಕ ಶಿಕ್ಷಣ </h3>
               <h4>ಗವಿಸಿದ್ದೇಶ್ವರ ಹೈಸ್ಕೂಲು, ಕೊಪ್ಪಳ</h4>
+              <p>1955 - 61 · ಬಿ.ಎ. ಗಣಿತ</p>
             </div>
             <div className={styles.card}>
               <h3>ಪದವಿ</h3>
