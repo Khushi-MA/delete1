@@ -44,7 +44,7 @@ export default function Home() {
             <div className={styles.card}>
               <h3>ಪ್ರಾಥಮಿಕ ಹಾಗು ಮಾದ್ಯಮಿಕ ಶಿಕ್ಷಣ </h3>
               <h4>ಗವಿಸಿದ್ದೇಶ್ವರ ಹೈಸ್ಕೂಲು, ಕೊಪ್ಪಳ</h4>
-              <p>1955 - 61 · ಬಿ.ಎ. ಗಣಿತ</p>
+              <p>1955 - 1961 </p>
             </div>
             <div className={styles.card}>
               <h3>ಪದವಿ</h3>
