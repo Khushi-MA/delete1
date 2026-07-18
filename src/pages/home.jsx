@@ -28,7 +28,7 @@ export default function Home() {
 
           <div className={styles.introContent}>
             <p className={styles.introEyebrow}>ಗಣಿತ ಪ್ರಾಧ್ಯಾಪಕ · ಕವಿ · ಸಾಹಿತಿ</p>
-            <h1 className={styles.pageTitle}>ವಿರೂಪಾಕ್ಷಪ್ಪ ಕೊರ್ಗಲ್</h1>
+            <h1 className={styles.pageTitle}>ವಿರೂಪಾಕ್ಷಪ್ಪ ಕೊರಗಲ್</h1>
             <p className={styles.intro}>
               ನಾನು ಗಣಿತ ಪ್ರಾಧ್ಯಾಪಕರಾಗಿ ಹಲವಾರು ವರ್ಷಗಳ ಕಾಲ ಶೈಕ್ಷಣಿಕ ಕ್ಷೇತ್ರದಲ್ಲಿ
               ಸೇವೆ ಸಲ್ಲಿಸಿದ್ದೇನೆ. ಇಲ್ಲಿ ನೀವು ನನ್ನ ಶಿಕ್ಷಣ, ಅನುಭವ ಮತ್ತು ಸೇವೆಯ ಕಥನವನ್ನು
