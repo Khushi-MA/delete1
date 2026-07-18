@@ -13,6 +13,8 @@ import Family from "./pages/family";
 import Home from "./pages/home";
 import Career from "./pages/career";
 
+import NotFound from "./pages/notfound";
+
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="/awards" element={<Awards />} />
             <Route path="/books" element={<Books />} />
             <Route path="/family" element={<Family />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>

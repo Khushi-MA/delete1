@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nf-window {
+    min-height: 100vh;
+    background: #f3f3f3;
+    font-family: "baloo Tamma 2", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Window */
+.nf-nudi-window {
+    width: min(1200px, 100%);
+    background: white;
+    border: 1px solid #cfcfcf;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .12);
+}
+
+/* Header */
+.window-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #fafafa, #efefef);
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    color: #222;
+}
+
+/* nf-toolbar */
+.nf-toolbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.nf-tool {
+    width: 54px;
+    height: 42px;
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 0px 2px;
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+.nf-error-content {
+    display: flex;
+    gap: 5rem;
+    padding: 4rem;
+    align-items: center;
+}
+
+/* nf-paper */
+.nf-paper {
+    position: relative;
+    width: 280px;
+    height: 380px;
+    background: linear-gradient(135deg, #fff8d7, #fff2ba);
+    border: 1px solid #d4c89b;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nf-paper-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: white;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    border-left: 1px solid #d4c89b;
+    border-bottom: 1px solid #d4c89b;
+}
+
+.nf-number {
+    font-size: 7rem;
+    font-weight: 300;
+    color: #333;
+}
+
+.nf-paper-text {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Text Section */
+.nf-message {
+    flex: 1;
+}
+
+.nf-message h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.4;
+}
+
+.nf-underline {
+    width: 100%;
+    max-width: 700px;
+    height: 3px;
+    background: #4d89d8;
+    margin: 1rem 0 2rem;
+}
+
+.nf-message p {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    color: #444;
+    max-width: 650px;
+}
+
+/* Buttons */
+.nf-actions {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button,
+.home-btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 1px solid #c9c9c9;
+    background: white;
+    color: #222;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover,
+.home-btn:hover {
+    background: #f2f2f2;
+}
+
+/* nf-tip */
+.nf-tip {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    gap: 1rem;
+}
+
+.nf-tip span {
+    font-size: 2rem;
+}
+
+.nf-tip p {
+    font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width:900px) {
+    .nf-error-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .nf-actions {
+        justify-content: center;
+    }
+
+    .nf-message h1 {
+        font-size: 2rem;
+    }
+
+    .nf-paper {
+        width: 220px;
+        height: 300px;
+    }
+
+    .nf-number {
+        font-size: 5rem;
+    }
+}
